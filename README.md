@@ -1,3 +1,3 @@
 # DecisionTree
 
-java implementation of a decision tree algorithm
+Implémentation en Java d'un algorithme d'arbre décisionnel
