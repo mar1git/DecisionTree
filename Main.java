@@ -1,5 +1,4 @@
 package app;
-//https://zestedesavoir.com/tutoriels/962/les-arbres-de-decisions/premiere-version-id13/#1-10802_lalgorithme-id3
 public class Main {
 
 	public static void main(String[] args) {
