@@ -95,13 +95,12 @@ public class Dataset {
 	    
 		while (iterator.hasNext()) {
 			String temp=iterator.next();
-	        //on crée un sous-ensemble qui ne contient que les éléments de
-	        //self ayant etiquette comme étiquette
+	        //on crée un sous-ensemble qui ne contient que les éléments de etiquette
 	        Dataset subset = this.getSubset(temp);
-	        //on ajoute |c| * log_2(|c|) à ret
+	        //|c| * log_2(|c|) à ret
 	        int subsetLenght = subset.getSize();
 	        result += subsetLenght * Math.log(subsetLenght)/Math.log(2);
-	    //on retourne log_2(|S|) - ret/|S|
+	    //log_2(|S|) - ret/|S|
 		}
 
 	    return Math.log(this.getSize())/Math.log(2) - result/this.getSize();
